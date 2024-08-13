@@ -36,22 +36,24 @@ Reset the environment:
 ```env.reset()```
 
 # How to Get ML Agents Working:
-https://unity-technologies.github.io/ml-agents/Getting-Started/
 
-Open/Create a Unity project
-Install ml agents package: Window>Package Manager> ML Agents
-Write A c# script to define the Agents bahavior anmd reward scheme in Unity.
-Agent Object inspector: 
-Add a Behavior Parameters Component (defines how an agent makes decisions)
-Define Space Size (vector of floating point numbers) and Continuous/Discrete actions 
+[Unity ML Agents Getting Started Guide](https://unity-technologies.github.io/ml-agents/Getting-Started/)
 
+1. **Open/Create a Unity project**
+2. **Install ml agents package**: `Window > Package Manager > ML Agents`
+3. **Write a C# script** to define the Agent's behavior and reward scheme in Unity.
 
-Pre Built models:
-In the terminal, navigate to the directory of the Unity project
-> pip3 install mlagents
-> pip3 install torch torchvision torchaudio
-> pip3 install protobuf==3.20.3
+   **Agent Object Inspector**:
+   - Add a Behavior Parameters Component (defines how an agent makes decisions).
+   - Define Space Size (vector of floating-point numbers) and Continuous/Discrete actions.
 
+**Pre-Built Models**:
+1. In the terminal, navigate to the directory of the Unity project.
+   ```bash
+   pip3 install mlagents
+   pip3 install torch torchvision torchaudio
+   pip3 install protobuf==3.20.3
+   
 Running the training sequence:
 	> mlagents-learn --run-id=Test1
 
