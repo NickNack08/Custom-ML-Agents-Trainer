@@ -22,7 +22,8 @@ Get the Decision Steps and Terminal Steps of the Agents:
 ```decision_steps, terminal_steps = env.get_steps(behavior_name)```
 
 Set the actions in the environment:
-```# Unity Environments expect ActionTuple instances.
+(Unity Environments expect ActionTuple instances)
+```
 action_tuple = ActionTuple()
 action_tuple.add_discrete(actions)
 env.set_actions(behavior_name, action_tuple)
