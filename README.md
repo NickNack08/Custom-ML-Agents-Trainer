@@ -34,8 +34,10 @@ decision_steps, terminal_steps = env.get_steps(behavior_name)
 
 # How to Get ML Agents Working:
 https://unity-technologies.github.io/ml-agents/Getting-Started/
+
 Open/Create a Unity project
 Install ml agents package: Window>Package Manager> ML Agents
+Write A c# script to define the Agents bahavior anmd reward scheme in Unity.
 Agent Object inspector: 
 Add a Behavior Parameters Component (defines how an agent makes decisions)
 Define Space Size (vector of floating point numbers) and Continuous/Discrete actions 
