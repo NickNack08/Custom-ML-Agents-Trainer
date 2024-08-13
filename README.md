@@ -10,7 +10,8 @@ Through ML Agents we are able to utilize a Python API to create our own models t
 
 https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Python-LLAPI.md
 
-Functions of ml agents functions in python:
+# Functions of ml agents functions in python:
+
 Read and store the Behavior Name of the Environment:
 	behavior_name = list(env.behavior_specs)[0]
 
@@ -26,10 +27,10 @@ Set the actions in the environment:
         action_tuple.add_discrete(actions)
         env.set_actions(behavior_name, action_tuple)
 
-Perform a step in the simulation
+Perform a step in the simulation:
         env.step()
 
-Reset the environment
+Reset the environment:
         env.reset()
 
 # How to Get ML Agents Working:
