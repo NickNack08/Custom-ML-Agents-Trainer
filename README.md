@@ -11,26 +11,26 @@ Through ML Agents we are able to utilize a Python API to create our own models t
 https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Python-LLAPI.md
 
 Functions of ml agents functions in python:
-# Read and store the Behavior Name of the Environment
-behavior_name = list(env.behavior_specs)[0]
+Read and store the Behavior Name of the Environment:
+	behavior_name = list(env.behavior_specs)[0]
 
- # Read and store the Behavior Specs of the Environment
- spec = env.behavior_specs[behavior_name]
+Read and store the Behavior Specs of the Environment:
+	spec = env.behavior_specs[behavior_name]
 
-# Get the Decision Steps and Terminal Steps of the Agents
-decision_steps, terminal_steps = env.get_steps(behavior_name)
+Get the Decision Steps and Terminal Steps of the Agents:
+	decision_steps, terminal_steps = env.get_steps(behavior_name)
 
-# Set the actions in the environment
-# Unity Environments expect ActionTuple instances.
-      action_tuple = ActionTuple()
-      action_tuple.add_discrete(actions)
-      env.set_actions(behavior_name, action_tuple)
+Set the actions in the environment:
+"# Unity Environments expect ActionTuple instances."
+        action_tuple = ActionTuple()
+        action_tuple.add_discrete(actions)
+        env.set_actions(behavior_name, action_tuple)
 
-# Perform a step in the simulation
-      env.step()
+Perform a step in the simulation
+        env.step()
 
-# Reset the environment
-    env.reset()
+Reset the environment
+        env.reset()
 
 # How to Get ML Agents Working:
 https://unity-technologies.github.io/ml-agents/Getting-Started/
