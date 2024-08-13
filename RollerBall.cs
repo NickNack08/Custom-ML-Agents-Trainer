@@ -1,3 +1,5 @@
+// Example setup for Rollerball basic environment //
+
 using UnityEngine;
 using Unity.MLAgents;
 using Unity.MLAgents.Sensors;
