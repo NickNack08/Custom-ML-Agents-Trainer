@@ -25,7 +25,8 @@ Set the actions in the environment:
 ```# Unity Environments expect ActionTuple instances.
 action_tuple = ActionTuple()
 action_tuple.add_discrete(actions)
-env.set_actions(behavior_name, action_tuple)```
+env.set_actions(behavior_name, action_tuple)
+```
 
 Perform a step in the simulation:
 ```env.step()```
